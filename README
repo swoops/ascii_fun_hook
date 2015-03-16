@@ -1,0 +1,20 @@
+What is this?
+============
+This is a stupid hook I made just to learn more about how hooks work.  All it 
+does is print the contents of ascii_img when you are booting up.  I put an ascii
+art image of zoidberg in there myself.  I figured I would go ahead and put it in 
+GIT so I could grab it easily.
+
+I expect this only works on Arch, sorry guys.
+
+Install
+-------
+sudo ./install.sh install
+
+Uninstall
+---------
+sudo ./install.sh uninstall
+
+Also
+-----
+Make sure to add the hook to your mkinitcpio.conf and run mkinitcpio -p linux

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+build() {
+    ascii_img="/usr/lib/initcpio/ascii_img"
+
+    if [[ -e  $ascii_img ]]; then
+        add_file "$ascii_img" "/ascii_img"
+        add_runscript
+    else
+        echo ERROR: ascii_fun: $ascii_img does not exist
+    fi
+}
+
+
+help() {
+    cat <<HELPEOF
+This is a really silly hook to print out ascii iamges
+HELPEOF
+}
+# vim: set ft=sh ts=4 sw=4 et:
